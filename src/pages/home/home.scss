@@ -1,0 +1,62 @@
+page-home {
+
+    .runBtn
+    {
+       // position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        height: 4.6rem;
+        margin: 37px;
+        
+    }
+    .button-md {
+    height: 4.6rem;
+    }
+
+    
+    .topDiv
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-family:Montserrat;
+        left: 0;
+        font-size: 15px;
+        text-align: left;
+        line-height: 1.8em;
+        height: 200%;
+         // font-family: 'Montserrat', sans-serif;
+      
+        // src: url('../assets/fonts/descriptionFont.ttf') format('ttf');
+    }
+
+    .code_card{
+        border: none;
+        white-space: pre-line;
+        border-radius: 5px;
+        border: none;
+        font-family:Inconsolata;
+        // font-family: 'Montserrat', sans-serif;
+      
+        // src: url('../assets/fonts/descriptionFont.ttf') format('ttf');
+    }
+
+    .output_card{
+        color: white;
+        background-color: black;
+        white-space: pre-line;
+        border-radius: 5px;
+        border: none;
+        font-family: Inconsolata;
+    }
+   
+    card-content-md {
+        padding: 0px 16px;
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+    
+}

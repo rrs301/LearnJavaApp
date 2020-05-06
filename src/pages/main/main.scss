@@ -1,0 +1,31 @@
+page-main {
+    .top_img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 180px;
+
+    }
+    .bg{
+        
+        //   background: linear-gradient(to bottom,  #43cea2 0%, #185a9d 100%);
+        background-image: url(../assets/imgs/bg_1.png);
+        font-family:Montserrat;
+        font-weight: bold;
+        
+    }
+    .page-topics .topicHeading {
+        color: #090909;
+        font-size: 10px;
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    .card-ios h1 {
+        margin: 0 0 2px;
+        font-size: 2.4rem;
+        font-weight: normal;
+        color: black;
+    }
+
+}

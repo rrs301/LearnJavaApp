@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides (ionSlideDidChange)="slideChanged()" pager="true">
+    <ion-slide *ngFor="let item of result">
+      
+      <div class="topDiv" >
+  <h4 style="font-weight: bold;">{{item.title}}</h4>
+  <div>{{item.description}}</div>
+
+  <ion-card class="code_card">
+    <ion-card-content>{{item.code}}</ion-card-content>
+  </ion-card>
+  <ion-card class="output_card" *ngIf="RunBtnClicked">
+      <ion-card-content>{{item.output}}</ion-card-content>
+    </ion-card>
+</div>
+
+  <div class="runBtn"> 
+  <button ion-button round full (click)="onRunBtnClicked()">{{run_btn}}</button>
+</div>
+</ion-slide>
+</ion-slides>
+</ion-content>

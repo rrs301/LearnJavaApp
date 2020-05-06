@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg" >
+<ion-card >
+  <img src="https://img.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147856686.jpg?size=338&ext=jpg" class="top_img"> 
+  <ion-grid>
+      <ion-row>
+        <ion-col col-8>
+            <ion-card-header>
+                Basic Java
+              </ion-card-header>
+        </ion-col>
+        <ion-col col-4>
+            <button ion-button round style="right: 15px" (click)="OnClickToGoTopicPage('Basic')">Learn</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-card>
+<ion-card  >
+    <div >
+    <img src="https://img.freepik.com/free-vector/programmers-concept-with-flat-design_23-2147855143.jpg?size=338&ext=jpg" class="top_img"> 
+    </div>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-8>
+              <ion-card-header>
+                  Intermediate Java Learn
+                </ion-card-header>
+          </ion-col>
+          <ion-col col-4>
+              <button ion-button round style="right: 15px" (click)="OnClickToGoTopicPage('Inter')">Learn</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-card>
+  <ion-card  >
+      <img src="https://img.freepik.com/free-vector/code-word-concept_23-2147844777.jpg?size=338&ext=jpg" class="top_img"> 
+      <ion-grid>
+          <ion-row>
+            <ion-col col-8>
+                <ion-card-header>
+                    Advance Java
+                  </ion-card-header>
+            </ion-col>
+            <ion-col col-4>
+                <button ion-button round style="right: 15px" (click)="OnClickToGoTopicPage('Advance')">Learn</button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      
+    
+    </ion-card>
+</ion-content>

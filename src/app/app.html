@@ -1,0 +1,43 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <!-- <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+            <img src="../assets/imgs/user.png" />
+        </ion-col>
+        <ion-col col-8>
+            
+            
+           
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->
+      
+     
+    <ion-list>
+        <ion-item (click)="More_App()">More Apps</ion-item>
+        <ion-item (click)="Request_Course_Topic()">Request Course/Topic</ion-item>
+    <ion-item (click)="FeedBack()"> Give Feedback</ion-item>
+    <ion-item (click)="ContactUs()"> Contact Us</ion-item>
+    
+    </ion-list>
+  </ion-content>
+
+  <ion-footer>
+      <ion-toolbar >
+          <ion-title text-wrap>Develop By Rahul Sanap </ion-title>
+          <ion-title text-wrap>at WIU App Version 1.0 </ion-title>
+        </ion-toolbar>
+   
+  </ion-footer>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
